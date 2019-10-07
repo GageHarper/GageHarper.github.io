@@ -29,14 +29,14 @@
      *      y: The y coordineate for the collectable.
      *      gravity: OPTIONAL The gravitational pull on the collectable.
      *      bounce: OPTIONAL A factor effecting how much the collectable will bounce off platforms, etc.
-     */ 
+     */
     collectable.init = function (game) {
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
-        collectable.create(type.steve, 200, 160, 3, 0.5);
-        collectable.create(type.grace, 155, 125, 5, 7)
-        collectable.create(type.max, 180, 50)
+        collectable.create(type.steve, 620,460);
+        collectable.create(type.grace, 410,270)
+        collectable.create(type.max, 650,175)
         
         
         // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
