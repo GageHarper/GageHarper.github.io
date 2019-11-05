@@ -44,23 +44,23 @@ drawCircle(1);
     
         game.checkCirclePosition = function(circle) {
             // TODO 5 : YOUR CODE STARTS HERE //////////////////////
-            
+         
             // if the circle has gone past the RIGHT side of the screen then place it on the LEFT
             if ( circle.x > canvas.width ) {
                 circle.x = 0;
             } 
             // TODO 5a) if the circle has gone past of the LEFT side of the screen then place it on the RIGHT
-            else if ( / * Fill me in! * / ) {
-                
-            } 
+            else if (circle.x < 0) {
+              circle.x = canvas.width                
+            }
 
             // TODO 5b) if the circle has gone past of the TOP side of the screen then place it on the BOTTOM
-            if ( / * Fill me in! * / ) {
-                
+            if ( circle.y< 0) {
+             circle.y =    canvas.height          
             }
             // TODO 5c) if the circle has gone past of the BOTTOM side of the screen then place it OFF-SCREEN TOP
-            else if ( / * Fill me in! * / ) {
-            
+            else if (circle.y> canvas.height) {
+            canvas.height = 0
             }
             // YOUR TODO 5 CODE ENDS HERE //////////////////////////
         }
@@ -74,8 +74,11 @@ drawCircle(1);
  physikz.updatePosition(circles[4]);
             
             // TODO 5 : Call game.checkCirclePosition on your circles.
-           
-
+            game.checkCirclePosition([0])
+            game.checkCirclePosition([1])
+            game.checkCirclePosition([2])
+            game.checkCirclePosition([3])
+            game.checkCirclePosition([4])
             // TODO 8 : Iterate over the array
            
 
