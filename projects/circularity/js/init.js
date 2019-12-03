@@ -33,12 +33,19 @@ function drawCircle() {
 }
 
         // TODO 3 / 7 : Call the drawCircle function 
-drawCircle(1);
-drawCircle(1);
-drawCircle(1);
-drawCircle(1);
-drawCircle(1);
-    
+drawCircle();
+drawCircle();
+drawCircle();
+drawCircle();
+drawCircle();
+
+var loopsCompleted = 0; 
+while (loopsCompleted < 100) {
+    // do something
+    loopsCompleted++
+
+}
+
         view.addChild(fps);
         app.addUpdateable(fps);
     
